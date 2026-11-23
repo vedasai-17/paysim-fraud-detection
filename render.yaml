@@ -1,0 +1,39 @@
+services:
+  - type: pserv
+    name: paysim-risk-api
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: paysim-risk-db
+          property: connectionString
+      - key: MODEL_PATH
+        value: /app/deploy/demo/model.joblib
+      - key: DEMO_SEED_PATH
+        value: /app/deploy/demo/transactions.csv
+      - key: OMP_NUM_THREADS
+        value: "1"
+      - key: OPENBLAS_NUM_THREADS
+        value: "1"
+  - type: web
+    name: paysim-analyst-dashboard
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    dockerCommand: streamlit run dashboard/app.py --server.address=0.0.0.0 --server.port=10000 --browser.gatherUsageStats=false
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: DEMO_READ_ONLY
+        value: "1"
+      - key: API_HOSTPORT
+        fromService:
+          type: pserv
+          name: paysim-risk-api
+          property: hostport
+
+databases:
+  - name: paysim-risk-db
+    plan: basic-256mb
+    ipAllowList: []

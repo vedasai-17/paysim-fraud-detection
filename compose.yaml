@@ -1,0 +1,49 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: fraud
+      POSTGRES_PASSWORD: fraud_local
+      POSTGRES_DB: fraud
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fraud -d fraud"]
+      interval: 3s
+      retries: 20
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  api:
+    build: .
+    environment:
+      DATABASE_URL: postgresql+psycopg://fraud:fraud_local@db:5432/fraud
+      MODEL_PATH: ${MODEL_PATH:-}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 3s
+      timeout: 5s
+      retries: 20
+    depends_on:
+      db:
+        condition: service_healthy
+    ports: ["127.0.0.1:8000:8000"]
+    volumes:
+      - ./artifacts:/app/artifacts
+  dashboard:
+    build: .
+    command: streamlit run dashboard/app.py --server.address=0.0.0.0 --server.port=8501
+    environment:
+      API_URL: http://api:8000
+    volumes:
+      - ./artifacts:/app/artifacts:ro
+    depends_on:
+      api:
+        condition: service_healthy
+    ports: ["127.0.0.1:8501:8501"]
+  simulator:
+    build: .
+    command: python -m simulator.replay --data data/fixture/paysim_sample.csv --url http://api:8000 --rate 2 --start-step 9
+    depends_on:
+      api:
+        condition: service_healthy
+    profiles: ["replay"]
+volumes:
+  pgdata:
