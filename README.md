@@ -1,5 +1,7 @@
 # Real-Time Payment Fraud Detection & Risk Scoring
 
+**[Open the live dashboard](https://paysim-fraud-detection-kmoxxuo3quezrivx4wyehe.streamlit.app)**
+
 An ML learning and portfolio project: train a model on PaySim-style payments, score a replayed stream through FastAPI, and investigate decisions in Streamlit. Data and decisions here are synthetic demonstrations.
 
 ## Architecture
