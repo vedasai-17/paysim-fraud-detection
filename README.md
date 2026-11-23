@@ -92,6 +92,12 @@ Run `docker compose run --rm --no-deps api pytest -q` to verify the code in the 
 
 The Phase 6 verification used an isolated Compose project with an empty PostgreSQL database. Fixture training and scoring ran without the full PaySim archive. All six held-out requests returned HTTP 201 and saved five SHAP contributions each. After restarting the stack, all six records were still present. An analyst approval on a review case also persisted after an API restart, alongside the original recommendation.
 
+## Free public demo on Streamlit Community Cloud
+
+Open [Streamlit Community Cloud](https://share.streamlit.io/) and create an app from `vedasai-17/paysim-fraud-detection` on `main`. Set the app file to `streamlit_app.py`. The app displays the bundled held-out sample, precomputed fraud scores and SHAP contributions. It runs independently of the local API and database.
+
+Regenerate the published snapshot with `docker compose run --rm --no-deps -v "${PWD}:/app" -e OMP_NUM_THREADS=1 api python -m deploy.export_snapshot`.
+
 ## Public portfolio demo on Render
 
 The [Blueprint](render.yaml) provisions a public read-only Streamlit dashboard, a private scoring API, and a private PostgreSQL database. The API loads the bundled LightGBM model and seeds 48 curated synthetic examples once. Visitors can filter and inspect scores and explanations. Local Docker Compose supports replay controls and analyst decisions.

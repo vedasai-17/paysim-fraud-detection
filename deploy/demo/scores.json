@@ -1,0 +1,1538 @@
+[
+  {
+    "transaction_id": "cloud-demo-001",
+    "step": 595,
+    "type": "CASH_IN",
+    "amount": 176919.67,
+    "isFraud": 0,
+    "fraud_probability": 3.1575572361348857e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": -2.898269905127115
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.1928309766474767
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 0.6582928015849752
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.1575381627836848
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.02957077242514405
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-002",
+    "step": 595,
+    "type": "CASH_IN",
+    "amount": 182417.8,
+    "isFraud": 0,
+    "fraud_probability": 3.1575572361348857e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": -2.7652357902839904
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.128133827508999
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 0.6388575332020143
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.2111876750033736
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.15395135173768995
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-003",
+    "step": 595,
+    "type": "TRANSFER",
+    "amount": 236914.77,
+    "isFraud": 1,
+    "fraud_probability": 0.056235040051717526,
+    "recommended_action": "review",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_TRANSFER",
+        "contribution": 3.5291991202187245
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.945475928133271
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.9113943334348724
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.073168832058232
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.03939046241578266
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-004",
+    "step": 596,
+    "type": "CASH_IN",
+    "amount": 76178.61,
+    "isFraud": 0,
+    "fraud_probability": 3.1575572361348857e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": -2.834308766952265
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.1789114078551168
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 0.6493503679353909
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.16072343815256973
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.09516542565147061
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-005",
+    "step": 596,
+    "type": "PAYMENT",
+    "amount": 730.45,
+    "isFraud": 0,
+    "fraud_probability": 3.1575909217696053e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": -2.7820223659660757
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.2563844919741154
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 0.6445533813186279
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.16691994681288289
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.058938467045182144
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-006",
+    "step": 596,
+    "type": "PAYMENT",
+    "amount": 17164.86,
+    "isFraud": 0,
+    "fraud_probability": 3.1575909217696053e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": -2.827937252502375
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.2641856611155435
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 0.6508029517886602
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.1665006012331818
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.01203823333351376
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-007",
+    "step": 597,
+    "type": "PAYMENT",
+    "amount": 2202.32,
+    "isFraud": 0,
+    "fraud_probability": 3.1575909217696053e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": -2.847467712735114
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.2790162021366742
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 0.6542731617582032
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.16542838577397978
+      },
+      {
+        "feature": "amount_log",
+        "contribution": 0.017725525848589132
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-008",
+    "step": 601,
+    "type": "TRANSFER",
+    "amount": 58706.55,
+    "isFraud": 0,
+    "fraud_probability": 0.06047453229466677,
+    "recommended_action": "review",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_TRANSFER",
+        "contribution": 3.682900918187636
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.920871131112426
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.8873193873900906
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.0382974164960825
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.10086158880383018
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-009",
+    "step": 608,
+    "type": "CASH_OUT",
+    "amount": 4716307.48,
+    "isFraud": 1,
+    "fraud_probability": 0.9458662241393159,
+    "recommended_action": "decline",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "amount_log",
+        "contribution": 4.50990521878632
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 2.785664144227321
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 2.6875746580988253
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 2.0814091390318303
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.06455350157546741
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-010",
+    "step": 612,
+    "type": "CASH_OUT",
+    "amount": 168656.93,
+    "isFraud": 0,
+    "fraud_probability": 0.005287414719913579,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.8939911632619268
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.861025432043621
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 0.6882530578421507
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.4398742355557638
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.16136510300185403
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-011",
+    "step": 617,
+    "type": "CASH_IN",
+    "amount": 229920.65,
+    "isFraud": 0,
+    "fraud_probability": 3.1575572361348857e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": -2.743863196791577
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.0868952502800322
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 0.6359890305163379
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.27716207759956796
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.14765464899789998
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-012",
+    "step": 619,
+    "type": "CASH_IN",
+    "amount": 192917.97,
+    "isFraud": 0,
+    "fraud_probability": 3.1575572361348857e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": -2.823373705922466
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.1347652931823418
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 0.6466949458184227
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.15490884871719018
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.15344930097534482
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-013",
+    "step": 619,
+    "type": "CASH_OUT",
+    "amount": 418971.0,
+    "isFraud": 1,
+    "fraud_probability": 0.010346405007296954,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.9470811712551328
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.9130193849061181
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 0.7827395948593165
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.11019790904716582
+      },
+      {
+        "feature": "type_DEBIT",
+        "contribution": 0.02232293287392788
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-014",
+    "step": 633,
+    "type": "CASH_OUT",
+    "amount": 4128853.75,
+    "isFraud": 1,
+    "fraud_probability": 0.9458662241393159,
+    "recommended_action": "decline",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "amount_log",
+        "contribution": 4.50990521878632
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 2.785664144227321
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 2.6875746580988253
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 2.0814091390318303
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.06455350157546741
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-015",
+    "step": 637,
+    "type": "PAYMENT",
+    "amount": 1694.86,
+    "isFraud": 0,
+    "fraud_probability": 3.1575909217696053e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": -2.32441235671329
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.3097673383970274
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 0.5919834922549022
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.4062208648881486
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.1699847123011441
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-016",
+    "step": 640,
+    "type": "CASH_OUT",
+    "amount": 277284.36,
+    "isFraud": 0,
+    "fraud_probability": 0.004555430639185833,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.8551455367723804
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.8229968583176461
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 0.710868204997836
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.5958350894906552
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.10126599612816786
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-017",
+    "step": 644,
+    "type": "PAYMENT",
+    "amount": 26336.96,
+    "isFraud": 0,
+    "fraud_probability": 3.1575909217696053e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": -2.7773721390509376
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.1886108798532984
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 0.6433478554240369
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.16343208224467143
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.1336752226523082
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-018",
+    "step": 644,
+    "type": "CASH_OUT",
+    "amount": 628033.58,
+    "isFraud": 1,
+    "fraud_probability": 0.06641205408192039,
+    "recommended_action": "review",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 2.193149009355189
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 2.0966945889804953
+      },
+      {
+        "feature": "amount_log",
+        "contribution": 1.672641844569204
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 0.5398719521761886
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.05029460852056922
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-019",
+    "step": 656,
+    "type": "TRANSFER",
+    "amount": 837727.27,
+    "isFraud": 0,
+    "fraud_probability": 0.03573069347082822,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 2.137893297355847
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 2.059233642354708
+      },
+      {
+        "feature": "amount_log",
+        "contribution": 1.3310921909249138
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": 1.0284817599092646
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -0.7592896193879057
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-020",
+    "step": 656,
+    "type": "CASH_OUT",
+    "amount": 84007.22,
+    "isFraud": 1,
+    "fraud_probability": 0.007381961483916021,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.936452483394619
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.9026039598769955
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 0.7063182597634753
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.20180003834022373
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.16423597842756732
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-021",
+    "step": 661,
+    "type": "CASH_IN",
+    "amount": 275265.86,
+    "isFraud": 0,
+    "fraud_probability": 3.1575572361348857e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": -2.8651732202233293
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.182759477121504
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 0.6531098847235902
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.15211262077376655
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.07293510344466494
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-022",
+    "step": 661,
+    "type": "CASH_IN",
+    "amount": 98872.48,
+    "isFraud": 0,
+    "fraud_probability": 3.1575572361348857e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": -2.8697563669803925
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.1872446119172615
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 0.6544619599632661
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.16044834366675953
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.05690399830565272
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-023",
+    "step": 669,
+    "type": "CASH_OUT",
+    "amount": 188429.9,
+    "isFraud": 0,
+    "fraud_probability": 0.005070669436224015,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.903821215958725
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.8706525773708185
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 0.6529413359646647
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.4761661369050609
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.15203696248582435
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-024",
+    "step": 670,
+    "type": "CASH_OUT",
+    "amount": 1001446.44,
+    "isFraud": 1,
+    "fraud_probability": 0.6767513491264023,
+    "recommended_action": "decline",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "amount_log",
+        "contribution": 3.3737402857638994
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 2.5471004538467437
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 2.4523977867054922
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 1.478414573092092
+      },
+      {
+        "feature": "type_DEBIT",
+        "contribution": 0.020827476424573166
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-025",
+    "step": 681,
+    "type": "CASH_OUT",
+    "amount": 295597.07,
+    "isFraud": 0,
+    "fraud_probability": 0.006830696878821815,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.920760895576009
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.887242787842845
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 0.7093698107185401
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.281157395767826
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.13530467016645384
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-026",
+    "step": 681,
+    "type": "CASH_IN",
+    "amount": 289426.21,
+    "isFraud": 0,
+    "fraud_probability": 3.1575572361348857e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": -2.8239911358026126
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.183586736464342
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 0.6478632774450214
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.15088058130514442
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.10918004132943955
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-027",
+    "step": 684,
+    "type": "TRANSFER",
+    "amount": 9173555.28,
+    "isFraud": 0,
+    "fraud_probability": 0.18209972232707036,
+    "recommended_action": "review",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "amount_log",
+        "contribution": 2.393203482020743
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 2.3192106421143794
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 2.2170781019988905
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": 1.3875335728151181
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -0.7067321046735998
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-028",
+    "step": 684,
+    "type": "CASH_OUT",
+    "amount": 212058.06,
+    "isFraud": 0,
+    "fraud_probability": 0.007118104879073247,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.9479989612426212
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.9139132563442427
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 0.6668650733676607
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.24147763306796455
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.14513908626813496
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-029",
+    "step": 684,
+    "type": "TRANSFER",
+    "amount": 537025.01,
+    "isFraud": 1,
+    "fraud_probability": 0.037042706348723635,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_TRANSFER",
+        "contribution": 2.089091549465382
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 2.0365323236615542
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.9486448369839284
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -0.8572426538326277
+      },
+      {
+        "feature": "amount_log",
+        "contribution": 0.6165200481130576
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-030",
+    "step": 686,
+    "type": "PAYMENT",
+    "amount": 17571.03,
+    "isFraud": 0,
+    "fraud_probability": 3.1575909217696053e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": -2.827937252502375
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.2641856611155435
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 0.6508029517886602
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.1665006012331818
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.01203823333351376
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-031",
+    "step": 687,
+    "type": "PAYMENT",
+    "amount": 5273.62,
+    "isFraud": 0,
+    "fraud_probability": 3.1575909217696053e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": -2.773878572879292
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.2549758928637764
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 0.6434453003389801
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.16696262293457045
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.06731432449087939
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-032",
+    "step": 687,
+    "type": "CASH_OUT",
+    "amount": 64492.82,
+    "isFraud": 0,
+    "fraud_probability": 0.005638168242518499,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.9099843567527266
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.876686399159675
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 0.6753027985602232
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.39308337450473824
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.1622880673858303
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-033",
+    "step": 688,
+    "type": "PAYMENT",
+    "amount": 14963.49,
+    "isFraud": 0,
+    "fraud_probability": 3.1575909217696053e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": -2.7294956404558213
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.248023816186959
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 0.6374554344865098
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.16754871981076194
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.11196435525964954
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-034",
+    "step": 688,
+    "type": "TRANSFER",
+    "amount": 765704.85,
+    "isFraud": 0,
+    "fraud_probability": 0.029441297351665525,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 2.0948611066864
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 2.0081572916474646
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": 1.3446402913694717
+      },
+      {
+        "feature": "amount_log",
+        "contribution": 1.0379910001690544
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -0.8911082534583958
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-035",
+    "step": 688,
+    "type": "CASH_OUT",
+    "amount": 207409.84,
+    "isFraud": 0,
+    "fraud_probability": 0.007009528249246228,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.9461694829056437
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.9121211041747095
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 0.6668359536427264
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.2491202888579899
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.14941080675492974
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-036",
+    "step": 690,
+    "type": "CASH_OUT",
+    "amount": 214685.96,
+    "isFraud": 0,
+    "fraud_probability": 0.004089390563540454,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.864956344184225
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.8325951266519664
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 0.6658436634318666
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.6282931535767322
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.15229315543483982
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-037",
+    "step": 691,
+    "type": "TRANSFER",
+    "amount": 558011.36,
+    "isFraud": 0,
+    "fraud_probability": 0.035095841924227954,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 2.0495266622000625
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": 1.9853723290877832
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.9635239304089223
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -0.9227649630575573
+      },
+      {
+        "feature": "amount_log",
+        "contribution": 0.7015205045094293
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-038",
+    "step": 691,
+    "type": "PAYMENT",
+    "amount": 17851.97,
+    "isFraud": 0,
+    "fraud_probability": 3.1575909217696053e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": -2.827937252502375
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.2641856611155435
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 0.6508029517886602
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.1665006012331818
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.01203823333351376
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-039",
+    "step": 692,
+    "type": "PAYMENT",
+    "amount": 19543.86,
+    "isFraud": 0,
+    "fraud_probability": 3.1575909217696053e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": -2.83384595482482
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.28449133159602
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 0.6518174379582272
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.16635418925900167
+      },
+      {
+        "feature": "amount_log",
+        "contribution": 0.013008372396133961
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-040",
+    "step": 692,
+    "type": "CASH_IN",
+    "amount": 241345.34,
+    "isFraud": 0,
+    "fraud_probability": 3.1575572361348857e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": -2.832052381673697
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.1902654882688164
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 0.6490350979959557
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.15332604941271866
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.09317841514273371
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-041",
+    "step": 695,
+    "type": "CASH_OUT",
+    "amount": 55525.55,
+    "isFraud": 0,
+    "fraud_probability": 0.006911102544524423,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.9329328694402954
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.8991571497506305
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 0.6932084375712705
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.24601184402904247
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.1666493014399018
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-042",
+    "step": 695,
+    "type": "TRANSFER",
+    "amount": 286835.21,
+    "isFraud": 1,
+    "fraud_probability": 0.04069482245544513,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_TRANSFER",
+        "contribution": 3.4734094809825002
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.9028524758967842
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.869645351720069
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.084802725343632
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.22893211288454923
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-043",
+    "step": 705,
+    "type": "CASH_IN",
+    "amount": 201197.36,
+    "isFraud": 0,
+    "fraud_probability": 3.1575572361348857e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_CASH_IN",
+        "contribution": -2.864083438562413
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.1567815575166265
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 0.6529933072079657
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.15404883063891928
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.09794015209320595
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-044",
+    "step": 707,
+    "type": "TRANSFER",
+    "amount": 4676.42,
+    "isFraud": 1,
+    "fraud_probability": 0.14749586001749249,
+    "recommended_action": "review",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_TRANSFER",
+        "contribution": 3.889962941113
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 2.0338499204948564
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.9979597862211764
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.1196802169228293
+      },
+      {
+        "feature": "amount_log",
+        "contribution": 0.5440109128361055
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-045",
+    "step": 709,
+    "type": "CASH_OUT",
+    "amount": 42019.04,
+    "isFraud": 0,
+    "fraud_probability": 0.008797826373139148,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.9537819918732349
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.9195728001780499
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": 0.7262530882415131
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.16624281113734188
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.07613465034705415
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-046",
+    "step": 715,
+    "type": "PAYMENT",
+    "amount": 7705.12,
+    "isFraud": 0,
+    "fraud_probability": 3.1575909217696053e-06,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_PAYMENT",
+        "contribution": -2.3623989793488263
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.313375577341296
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 0.5968638193007267
+      },
+      {
+        "feature": "amount_log",
+        "contribution": -0.37100294560665553
+      },
+      {
+        "feature": "type_TRANSFER",
+        "contribution": -0.16858899935080615
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-047",
+    "step": 720,
+    "type": "TRANSFER",
+    "amount": 71439.81,
+    "isFraud": 1,
+    "fraud_probability": 0.09444326693293252,
+    "recommended_action": "review",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_TRANSFER",
+        "contribution": 3.738223040938741
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.9896593824687254
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 1.9546735442864198
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -1.0960401918226692
+      },
+      {
+        "feature": "amount_log",
+        "contribution": 0.2503232773045797
+      }
+    ]
+  },
+  {
+    "transaction_id": "cloud-demo-048",
+    "step": 731,
+    "type": "TRANSFER",
+    "amount": 508929.61,
+    "isFraud": 1,
+    "fraud_probability": 0.03795544125527998,
+    "recommended_action": "approve",
+    "model_version": "2.0.0",
+    "explanations": [
+      {
+        "feature": "type_TRANSFER",
+        "contribution": 2.1028448057641405
+      },
+      {
+        "feature": "type_CASH_IN",
+        "contribution": 2.038618394750337
+      },
+      {
+        "feature": "type_PAYMENT",
+        "contribution": 1.95077371488903
+      },
+      {
+        "feature": "type_CASH_OUT",
+        "contribution": -0.8585519113116014
+      },
+      {
+        "feature": "amount_log",
+        "contribution": 0.6252158785231013
+      }
+    ]
+  }
+]
